@@ -11,7 +11,17 @@ basicOp('*', 5, 5)         // Output: 25
 basicOp('/', 49, 7)        // Output: 7
 */
 
-function basicOp(operation, value1, value2)
-{
-  // Code
+const basicOp = (operation, value1, value2) => {
+  if(operation === '+') {
+    return value1 + value2;
+  }
+  if(operation === '-') {
+    return value1 - value2;
+  }
+  if(operation === '*') {
+    return value1 * value2;
+  }
+  if(operation === '/') {
+    return value1 / value2;
+  }
 }
